@@ -15,6 +15,10 @@
 		DF2C999F2689E0DC00577394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2C999D2689E0DC00577394 /* LaunchScreen.storyboard */; };
 		DF2C99AA2689E0DD00577394 /* SWTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C99A92689E0DD00577394 /* SWTestTests.swift */; };
 		DF2C99B52689E0DD00577394 /* SWTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C99B42689E0DD00577394 /* SWTestUITests.swift */; };
+		DF2C99C7268A52D800577394 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C99C6268A52D800577394 /* XMLParser.swift */; };
+		DF2C99D2268C48F000577394 /* ConverterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C99D1268C48F000577394 /* ConverterScreenViewController.swift */; };
+		DF2C99D8268C5E9200577394 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C99D7268C5E9200577394 /* PickerViewController.swift */; };
+		DF2C99E6268D20F500577394 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C99E5268D20F500577394 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		DF2C99B02689E0DD00577394 /* SWTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2C99B42689E0DD00577394 /* SWTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWTestUITests.swift; sourceTree = "<group>"; };
 		DF2C99B62689E0DD00577394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF2C99C6268A52D800577394 /* XMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
+		DF2C99D1268C48F000577394 /* ConverterScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterScreenViewController.swift; sourceTree = "<group>"; };
+		DF2C99D7268C5E9200577394 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		DF2C99E5268D20F500577394 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 		DF2C99912689E0D900577394 /* SWTest */ = {
 			isa = PBXGroup;
 			children = (
+				DF2C99C5268A52AA00577394 /* NetworkService */,
+				DF2C99C22689E29900577394 /* Modules */,
 				DF2C99922689E0D900577394 /* AppDelegate.swift */,
 				DF2C99942689E0D900577394 /* SceneDelegate.swift */,
 				DF2C99962689E0D900577394 /* ViewController.swift */,
@@ -128,6 +138,64 @@
 			path = SWTestUITests;
 			sourceTree = "<group>";
 		};
+		DF2C99C22689E29900577394 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DF2C99E7268D27A000577394 /* Model */,
+				DF2C99C9268C43AE00577394 /* PickerScreen */,
+				DF2C99C8268C43A000577394 /* ConverterScreen */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DF2C99C5268A52AA00577394 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				DF2C99C6268A52D800577394 /* XMLParser.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		DF2C99C8268C43A000577394 /* ConverterScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DF2C99CD268C447300577394 /* ViewController */,
+			);
+			path = ConverterScreen;
+			sourceTree = "<group>";
+		};
+		DF2C99C9268C43AE00577394 /* PickerScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DF2C99CE268C471200577394 /* ViewController */,
+			);
+			path = PickerScreen;
+			sourceTree = "<group>";
+		};
+		DF2C99CD268C447300577394 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DF2C99D1268C48F000577394 /* ConverterScreenViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DF2C99CE268C471200577394 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DF2C99D7268C5E9200577394 /* PickerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DF2C99E7268D27A000577394 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF2C99E5268D20F500577394 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +212,8 @@
 			dependencies = (
 			);
 			name = SWTest;
+			packageProductDependencies = (
+			);
 			productName = SWTest;
 			productReference = DF2C998F2689E0D900577394 /* SWTest.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +285,8 @@
 				Base,
 			);
 			mainGroup = DF2C99862689E0D900577394;
+			packageReferences = (
+			);
 			productRefGroup = DF2C99902689E0D900577394 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +330,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF2C99E6268D20F500577394 /* Model.swift in Sources */,
 				DF2C99972689E0D900577394 /* ViewController.swift in Sources */,
+				DF2C99D2268C48F000577394 /* ConverterScreenViewController.swift in Sources */,
+				DF2C99D8268C5E9200577394 /* PickerViewController.swift in Sources */,
 				DF2C99932689E0D900577394 /* AppDelegate.swift in Sources */,
 				DF2C99952689E0D900577394 /* SceneDelegate.swift in Sources */,
+				DF2C99C7268A52D800577394 /* XMLParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +513,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JV2JT4Z4Z;
 				INFOPLIST_FILE = SWTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +532,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JV2JT4Z4Z;
 				INFOPLIST_FILE = SWTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

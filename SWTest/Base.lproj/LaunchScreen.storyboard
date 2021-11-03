@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,15 +13,64 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="dollarsign.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gVM-En-GZJ">
+                                <rect key="frame" x="94" y="393.33333333333337" width="71" height="67.666666666666686"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="3jS-ZY-WjS"/>
+                                    <constraint firstAttribute="height" constant="70.666666666666686" id="OfX-Vf-2E1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="eurosign.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iEW-5J-DZN">
+                                <rect key="frame" x="226" y="393.33333333333337" width="71" height="67.666666666666686"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="Dxw-6l-nDy"/>
+                                    <constraint firstAttribute="height" constant="70.666666666666686" id="Oco-Vw-yC5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Currency converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbn-pf-MWc">
+                                <rect key="frame" x="106" y="481" width="179" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="y1R-7m-uEa">
+                                <rect key="frame" x="173" y="405" width="45" height="44.333333333333314"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iEW-5J-DZN" firstAttribute="leading" secondItem="y1R-7m-uEa" secondAttribute="trailing" constant="8" id="E00-cX-ovQ"/>
+                            <constraint firstItem="iEW-5J-DZN" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerYWithinMargins" id="E1J-fk-oej"/>
+                            <constraint firstItem="kbn-pf-MWc" firstAttribute="top" secondItem="gVM-En-GZJ" secondAttribute="bottom" constant="8" symbolic="YES" id="EPt-Lf-oQD"/>
+                            <constraint firstItem="y1R-7m-uEa" firstAttribute="leading" secondItem="gVM-En-GZJ" secondAttribute="trailing" constant="8" id="Oyq-yv-JVm"/>
+                            <constraint firstItem="gVM-En-GZJ" firstAttribute="width" secondItem="y1R-7m-uEa" secondAttribute="width" multiplier="1.57778" id="PWW-sB-Lws"/>
+                            <constraint firstItem="gVM-En-GZJ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerYWithinMargins" id="Yee-qa-hNi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iEW-5J-DZN" secondAttribute="trailing" constant="77" id="dZE-7n-86Y"/>
+                            <constraint firstItem="kbn-pf-MWc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerXWithinMargins" id="s0r-S6-NIl"/>
+                            <constraint firstItem="y1R-7m-uEa" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerYWithinMargins" id="tDa-JL-mP0"/>
+                            <constraint firstItem="gVM-En-GZJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="78" id="w4G-BD-MAq"/>
+                            <constraint firstItem="y1R-7m-uEa" firstAttribute="width" secondItem="iEW-5J-DZN" secondAttribute="width" multiplier="0.633803" id="wfh-3P-zxH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow.right" catalog="system" width="128" height="98"/>
+        <image name="dollarsign.square" catalog="system" width="128" height="114"/>
+        <image name="eurosign.square" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
